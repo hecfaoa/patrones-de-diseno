@@ -1,0 +1,1 @@
+{"version":3,"file":"LocalTextFileReader.d.ts","sourceRoot":"","sources":["../../../src/Strategy/class/LocalTextFileReader.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,oCAAoC,CAAC;AAI7E,qBAAa,mBAAoB,YAAW,kBAAkB;IACtD,IAAI,CAAC,YAAY,EAAE,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC,CAMhD;CACF"}

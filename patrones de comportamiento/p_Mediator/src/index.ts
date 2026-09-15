@@ -1,0 +1,23 @@
+import { SalaDeChatMediador } from "./class/SalaDeChatMediador.js";
+import { UsuarioChat } from "./class/UsuarioChat.js";
+
+console.log("wellcome to mediator pattern\n\n");
+
+console.log("// 1. Creamos el mediador (La torre de control)\n\n");
+const salaChat = new SalaDeChatMediador();
+
+console.log("// 2. Instanciamos los usuarios pasándoles solo el mediador\n\n");
+const hector = new UsuarioChat(salaChat, "Héctor");
+const ana = new UsuarioChat(salaChat, "Ana");
+const carlos = new UsuarioChat(salaChat, "Carlos");
+
+console.log("registramos los usuarios\n");
+
+salaChat.registrarUsuario(hector);
+salaChat.registrarUsuario(ana);
+salaChat.registrarUsuario(carlos);
+
+
+console.log("// 3. Héctor envía un mensaje. No sabe si hay 2 o 100 usuarios en la sala\n\n");
+hector.enviar("¡Hola equipo, el patrón Mediator está desplegado!");
+
